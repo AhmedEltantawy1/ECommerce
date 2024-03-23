@@ -32,7 +32,7 @@ namespace ECommerce.Data
                             Description="C2"
                         },
 
-                        new Category()
+                        new()
                         {
                             Name="C3",
                             Description="C3"
@@ -76,6 +76,17 @@ namespace ECommerce.Data
                                 ImageURL="https...",
                                 ProductColor= ProductColor.Yellow,
                                 CategoryId=3,
+                            },
+
+                             new Product()
+                            {
+
+                                Name="P4",
+                                Description="D4",
+                                Price=400,
+                                ImageURL="https...",
+                                ProductColor= ProductColor.Blue,
+                                CategoryId=4,
                             }
                         };
                     context.Products.AddRange(Products);
